@@ -33,14 +33,14 @@ const Announcement = () => {
         <div
           key={e.id}
           className={`flex flex-col gap-3 py-4 px-4 bor rounded-md   ${
-            index % 2 === 0 ? ' bg-blue-200' : 'bg-purple-200'
+            index % 2 === 0 ? ' bg-blue-100' : 'bg-purple-100'
           }`}
         >
           <div className='flex justify-between items-center'>
-            <h2 className='text-lg font-bold text-gray-700'>{e.title}</h2>
-            <p className='text-xs text-gray-500'>{e.time}</p>
+            <h2 className=' font-bold text-gray-700'>{e.title}</h2>
+            <p className='p-1 rounded-lg bg-white text-xs text-gray-500'>{e.time}</p>
           </div>
-          <p className='text-sm text-gray-600'>{e.description}</p>
+          <p className='text-xs text-gray-600'>{e.description}</p>
         </div>
       ))}
     </div>

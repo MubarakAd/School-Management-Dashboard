@@ -38,7 +38,7 @@ const Events = () => {
       }`}
     >
       <div className='flex justify-between items-center'>
-        <h2 className='text-lg font-semibold text-gray-700'>{e.title}</h2>
+        <h2 className='erfont-semibold text-gray-700'>{e.title}</h2>
         <p className='text-xs text-gray-500'>{e.date}</p>
       </div>
       <p className='text-sm text-gray-600'>{e.description}</p>
