@@ -15,9 +15,11 @@ const render = (item: rowType) => (
     key={item.id}
     className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
+
     <td className=" p-4 " >{item.name}</td>
     <td className="  p-4  hidden md:table-cell ">{item.teachers.join(",")}</td>
     <td className="flex   p-4   gap-2">
+
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />

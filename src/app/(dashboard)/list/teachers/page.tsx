@@ -20,7 +20,7 @@ export interface rowType {
 const render = (item: rowType) => (
   <tr
     key={item.id}
-    className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
+    className="text-left border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
     <td className=" p-4 ">
         <div className="flex gap-4"> <Image

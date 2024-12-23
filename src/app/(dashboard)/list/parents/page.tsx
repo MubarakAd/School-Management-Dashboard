@@ -24,10 +24,12 @@ const render = (item: rowType) => (
         <p className="text-gray-500 text-xs">{item.email}</p>
       </div>
     </td>
+
     <td className="hidden md:table-cell p-4">{item.students.join(",")}</td>
     <td className="hidden md:table-cell p-4">{item.phone}</td>
     <td className="hidden lg:table-cell p-4">{item.address}</td>
     <td className="flex  gap-2 p-4">
+
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />
