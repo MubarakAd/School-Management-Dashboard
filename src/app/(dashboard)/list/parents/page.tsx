@@ -16,18 +16,18 @@ export interface rowType {
 const render = (item: rowType) => (
   <tr
     key={item.id}
-    className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
+    className="text-left border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
-    <td className="p-4 ">
-      <div className="flex flex-col gap-2 items-center ">
+    <td className=" p-4 ">
+      <div className="flex flex-col gap-2  ">
         <h3 className="font-semibold">{item.name}</h3>
         <p className="text-gray-500 text-xs">{item.email}</p>
       </div>
     </td>
-    <td className="hidden md:table-cell">{item.students.join(",")}</td>
-    <td className="hidden md:table-cell">{item.phone}</td>
-    <td className="hidden lg:table-cell">{item.address}</td>
-    <td className="flex  gap-2">
+    <td className="hidden md:table-cell p-4">{item.students.join(",")}</td>
+    <td className="hidden md:table-cell p-4">{item.phone}</td>
+    <td className="hidden lg:table-cell p-4">{item.address}</td>
+    <td className="flex  gap-2 p-4">
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />

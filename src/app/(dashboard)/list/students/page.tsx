@@ -21,8 +21,9 @@ const render = (item: rowType) => (
     key={item.id}
     className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
-    <td className="flex  p-4 gap-4">
-      <Image
+    <td className="  p-4 ">
+        <div className="flex gap-4">
+        <Image
         src={item.photo}
         alt=""
         width={18}
@@ -33,12 +34,14 @@ const render = (item: rowType) => (
         <h3 className="font-semibold">{item.name}</h3>
         <p className="text-gray-500 text-xs">{item.class}</p>
       </div>
+        </div>
+    
     </td>
-    <td className="hidden md:table-cell">{item.studentId}</td>
-    <td className="hidden md:table-cell">{item.grade}</td>
-    <td className="hidden md:table-cell">{item.phone}</td>
-    <td className="hidden xl:table-cell">{item.address}</td>
-    <td className="flex  gap-2">
+    <td className="hidden md:table-cell p-4">{item.studentId}</td>
+    <td className="hidden md:table-cell p-4">{item.grade}</td>
+    <td className="hidden md:table-cell p-4">{item.phone}</td>
+    <td className="hidden  xl:table-cell p-4">{item.address}</td>
+    <td className="flex p-4 gap-2">
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />
