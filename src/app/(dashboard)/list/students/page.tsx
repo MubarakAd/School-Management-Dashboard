@@ -21,7 +21,7 @@ const render = (item: rowType) => (
     key={item.id}
     className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
-    <td className="flex items-center p-4 gap-4">
+    <td className="flex  p-4 gap-4">
       <Image
         src={item.photo}
         alt=""
