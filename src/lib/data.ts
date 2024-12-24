@@ -245,6 +245,66 @@ export const studentsData = [
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
+  {
+    id: 11,
+    studentId: "1234567890",
+    name: "John Doe",
+    email: "john@doe.com",
+    photo:
+      "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "1234567890",
+    grade: 5,
+    class: "1B",
+    address: "123 Main St, Anytown, USA",
+  },
+  {
+    id: 12,
+    studentId: "1234567890",
+    name: "Jane Doe",
+    email: "jane@doe.com",
+    photo:
+      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "1234567890",
+    grade: 5,
+    class: "5A",
+    address: "123 Main St, Anytown, USA",
+  },
+  {
+    id: 13,
+    studentId: "1234567890",
+    name: "Mike Geller",
+    email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "1234567890",
+    grade: 5,
+    class: "5A",
+    address: "123 Main St, Anytown, USA",
+  },
+  {
+    id: 14,
+    studentId: "1234567890",
+    name: "Jay French",
+    email: "jay@gmail.com",
+    photo:
+      "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "1234567890",
+    grade: 5,
+    class: "5A",
+    address: "123 Main St, Anytown, USA",
+  },
+  {
+    id: 15,
+    studentId: "1234567890",
+    name: "Jane Smith",
+    email: "jane@gmail.com",
+    photo:
+      "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "1234567890",
+    grade: 5,
+    class: "5A",
+    address: "123 Main St, Anytown, USA",
+  },
 ];
 
 export const parentsData = [
@@ -457,6 +517,66 @@ export const classesData = [
 ];
 
 export const lessonsData = [
+  {
+    id: 1,
+    subject: "Math",
+    class: "1A",
+    teacher: "Tommy Wise",
+  },
+  {
+    id: 2,
+    subject: "English",
+    class: "2A",
+    teacher: "Rhoda Frank",
+  },
+  {
+    id: 3,
+    subject: "Science",
+    class: "3A",
+    teacher: "Della Dunn",
+  },
+  {
+    id: 4,
+    subject: "Social Studies",
+    class: "1B",
+    teacher: "Bruce Rodriguez",
+  },
+  {
+    id: 5,
+    subject: "Art",
+    class: "4A",
+    teacher: "Birdie Butler",
+  },
+  {
+    id: 6,
+    subject: "Music",
+    class: "5A",
+    teacher: "Bettie Oliver",
+  },
+  {
+    id: 7,
+    subject: "History",
+    class: "6A",
+    teacher: "Herman Howard",
+  },
+  {
+    id: 8,
+    subject: "Geography",
+    class: "6B",
+    teacher: "Lucinda Thomas",
+  },
+  {
+    id: 9,
+    subject: "Physics",
+    class: "6C",
+    teacher: "Ronald Roberts",
+  },
+  {
+    id: 10,
+    subject: "Chemistry",
+    class: "4B",
+    teacher: "Julia Pittman",
+  },
   {
     id: 1,
     subject: "Math",
