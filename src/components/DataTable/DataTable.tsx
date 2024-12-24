@@ -32,11 +32,11 @@ const DataTable: React.FC<DataTableProps> = ({
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
   return (
-    <div className="container  p-4">
+    <div className="container p  p-4">
       <div className="overflow-x-auto">
         <table className="min-w-full  bg-white shadow-lg">
           <thead>
-            <tr className="bg-gray-200 text-gray-500 text-left text-sm">
+            <tr className=" bg-gray-200 text-gray-500 text-left text-sm">
               {columns.map((column) => (
                 <th
                   key={column.key}
