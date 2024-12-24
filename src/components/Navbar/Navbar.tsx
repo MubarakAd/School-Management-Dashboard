@@ -1,4 +1,4 @@
-import { role } from '@/lib/data'
+import { role } from '@/data/data'
 import Image from 'next/image'
 import React from 'react'
 
