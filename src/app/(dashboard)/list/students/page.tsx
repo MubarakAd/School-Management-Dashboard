@@ -42,7 +42,7 @@ const render = (item: rowType) => (
     <td className="hidden md:table-cell p-4">{item.phone}</td>
     <td className="hidden  xl:table-cell p-4">{item.address}</td>
     <td className="flex p-4 gap-4">
-      <Link href={`/list/teachers/${item.id}`}>
+      <Link href={`/list/students/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />
         </button>
