@@ -19,10 +19,10 @@ export interface rowType {
 const render = (item: rowType) => (
   <tr
     key={item.id}
-    className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
+    className="text-left border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
     <td className="  p-4 ">
-        <div className="flex gap-4">
+        <div className="flex  gap-4">
         <Image
         src={item.photo}
         alt=""
@@ -30,7 +30,7 @@ const render = (item: rowType) => (
         height={18}
         className="md:hidden xl:block h-10 w-10 rounded-full object-cover"
       />
-      <div className="flex flex-col gap-2 items-center ">
+      <div className="flex flex-col gap-2  ">
         <h3 className="font-semibold">{item.name}</h3>
         <p className="text-gray-500 text-xs">{item.class}</p>
       </div>
@@ -41,7 +41,7 @@ const render = (item: rowType) => (
     <td className="hidden md:table-cell p-4">{item.grade}</td>
     <td className="hidden md:table-cell p-4">{item.phone}</td>
     <td className="hidden  xl:table-cell p-4">{item.address}</td>
-    <td className="flex p-4 gap-2">
+    <td className="flex p-4 gap-4">
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />

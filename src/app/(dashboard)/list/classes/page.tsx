@@ -18,10 +18,10 @@ const render = (item: rowType) => (
     className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
     <td className=" p-4 " >{item.name}</td>
-    <td className="  p-4  ">{item.capacity}</td>
-    <td className=" p-4 " >{item.grade}</td>
+    <td className="hidden md:table-cell p-4 ">{item.capacity}</td>
+    <td className="hidden md:table-cell p-4 " >{item.grade}</td>
     <td className="hidden md:table-cell p-4 " >{item.supervisor}</td>
-    <td className="flex p-4   gap-2">
+    <td className="flex p-4   gap-4">
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />
@@ -38,7 +38,7 @@ const render = (item: rowType) => (
 const page = () => {
   return (
     <div className="p-4 bg-white m-3 rounded-md">
-      <CommonHeader career="All Subjects" />
+      <CommonHeader career="All Classes" />
       <DataTable data={classesData} columns={column} render={render} />
     </div>
   );
