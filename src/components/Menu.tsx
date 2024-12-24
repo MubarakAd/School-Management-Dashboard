@@ -1,6 +1,6 @@
 'use client';
-import { role } from "@/lib/data";
-import { menuItems } from "@/lib/menu";
+import { role } from "@/data/data";
+import { menuItems } from "@/data/menu";
 import { button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";

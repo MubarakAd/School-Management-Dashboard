@@ -1,4 +1,4 @@
-import { role } from "@/lib/data"; // Assuming this is where your role is coming from
+import { role } from "@/data/data"; // Assuming this is where your role is coming from
 import Image from "next/image";
 import React from "react";
 

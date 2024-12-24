@@ -1,27 +1,29 @@
 "use client";
 import CommonHeader from "@/components/CommonHeader/CommonHearder";
 import DataTable from "@/components/DataTable/DataTable";
-import { role, classesData} from "@/data/data";
-import { column } from "@/data/classesHeaderData";
+import { role, eventsData} from "@/data/data";
+import { column } from "@/data/eventsHeaderData";
 import Image from "next/image";
 import Link from "next/link";
 export interface rowType {
     id: number,
-    name: string,
-    capacity: number,
-    grade: number,
-    supervisor: string,
+    title: string,
+    class: string,
+    date: string,
+    startTime: string,
+    endTime: string,
 }
 const render = (item: rowType) => (
   <tr
     key={item.id}
     className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purple-50"
   >
-    <td className=" p-4 " >{item.name}</td>
-    <td className="hidden md:table-cell p-4 ">{item.capacity}</td>
-    <td className="hidden md:table-cell p-4 " >{item.grade}</td>
-    <td className="hidden md:table-cell p-4 " >{item.supervisor}</td>
-    <td className="flex p-4   gap-4">
+    <td className=" px-2 py-4" >{item.title}</td>
+    <td className=" px-2 py-4">{item.class}</td>
+    <td className="hidden md:table-cell p-4" >{item.date}</td>
+    <td className="hidden md:table-cell px-2 py-4" >{item.startTime}</td>
+    <td className="hidden md:table-cell  p-4" >{item.endTime}</td>
+    <td className="flex p-4   gap-2">
       <Link href={`/list/teachers/${item.id}`}>
         <button className="flex items-center justify-center w-7 h-7 rounded-full bg-teal-300">
           <Image src={"/view.png"} alt="" width={16} height={16} />
@@ -38,8 +40,8 @@ const render = (item: rowType) => (
 const page = () => {
   return (
     <div className="p-4 bg-white m-3 rounded-md">
-      <CommonHeader career="All Classes" />
-      <DataTable data={classesData} columns={column} render={render} />
+      <CommonHeader career="All Events" />
+      <DataTable data={eventsData} columns={column} render={render} />
     </div>
   );
 };

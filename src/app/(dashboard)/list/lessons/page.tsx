@@ -1,8 +1,8 @@
 "use client";
 import CommonHeader from "@/components/CommonHeader/CommonHearder";
 import DataTable from "@/components/DataTable/DataTable";
-import { role,  lessonsData} from "@/lib/data";
-import { column } from "@/lib/lessonsHeaderData";
+import { role,  lessonsData} from "@/data/data";
+import { column } from "@/data/lessonsHeaderData";
 import Image from "next/image";
 import Link from "next/link";
 export interface rowType {
